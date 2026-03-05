@@ -1,49 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKSH | Educator Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Deep black to match your slides */
+            color: #ffffff;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
 
-<title>Moksh Jadav | Portfolio</title>
+        .wrapper {
+            text-align: center;
+            padding: 20px;
+            max-width: 900px;
+        }
 
-<style>
-body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#0f172a;
-    color:white;
-    text-align:center;
-}
+        /* Your Name - Big and Bold */
+        h1 {
+            font-size: 12vw; /* Scales with screen size */
+            font-weight: 900;
+            letter-spacing: 0.2em;
+            margin: 0;
+            text-transform: uppercase;
+            line-height: 1;
+            background: linear-gradient(180deg, #fff 0%, #444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-header{
-    padding:25px;
-    background:#020617;
-}
+        /* The Learnings Section */
+        .learnings-container {
+            margin-top: 50px;
+            border-top: 1px solid #333;
+            padding-top: 40px;
+        }
 
-h1{
-    color:#38bdf8;
-    margin:0;
-}
+        .section-title {
+            font-size: 0.8rem;
+            letter-spacing: 0.5em;
+            color: #00f2ff; /* Your neon accent */
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            display: block;
+        }
 
-iframe{
-    width:90%;
-    height:85vh;
-    border:none;
-    margin-top:20px;
-    border-radius:10px;
-}
+        .learning-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
 
-</style>
+        .learning-item {
+            border-left: 2px solid #222;
+            padding-left: 20px;
+            transition: 0.3s ease;
+        }
+
+        .learning-item:hover {
+            border-left: 2px solid #00f2ff;
+        }
+
+        .learning-item h3 {
+            font-size: 1.1rem;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .learning-item p {
+            font-size: 0.9rem;
+            color: #888;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 18vw; letter-spacing: 0.1em; }
+            .learning-list { text-align: center; }
+            .learning-item { border-left: none; border-bottom: 1px solid #222; padding: 0 0 20px 0; }
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-<h1>Moksh Jadav</h1>
-</header>
+    <div class="wrapper">
+        <h1>MOKSH</h1>
+        
+        <div class="learnings-container">
+            <span class="section-title">Teaching & Academic Learnings</span>
+            
+            <div class="learning-list">
+                <div class="learning-item">
+                    <h3>Educational Vision</h3>
+                    <p>Bridging the gap between high-level research and classroom engagement.</p>
+                </div>
 
-<!-- Google Slides Portfolio -->
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR2WpEXkG-Rx7bVzXao5hM-MFuMRA_zW8KK-5TPmYqg46p59IMUTRO1-apfuuVLJlkvYWT3g2f-_kq6/embed?start=true&loop=true&delayms=60000"></iframe>
+                <div class="learning-item">
+                    <h3>The Educator Role</h3>
+                    <p>Focusing on mentorship and the ethical delivery of academic knowledge.</p>
+                </div>
+
+                <div class="learning-item">
+                    <h3>Core Expertise</h3>
+                    <p>Curriculum design, student psychology, and adaptive learning strategies.</p>
+                </div>
+
+                <div class="learning-item">
+                    <h3>Subject Mastery</h3>
+                    <p>Advanced Academic Writing and Research Methodology (Paper #1–4).</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; opacity: 0.4; font-size: 0.8rem; letter-spacing: 2px;">
+            PORTFOLIO 2026
+        </div>
+    </div>
 
 </body>
 </html>
